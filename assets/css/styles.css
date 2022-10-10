@@ -228,4 +228,16 @@
         transform: rotate(-90deg);
         border: 0.1rem solid var(--primary-color);
     }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    body {
+        font-size: 1.2rem;
+    }
 }
