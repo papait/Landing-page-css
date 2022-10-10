@@ -1,0 +1,231 @@
+.intro-content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Separadando um fragamento pra cada lado em duas colunas*/
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-text , .intro-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*alinha centro dentro da linha /coluna*/
+}
+
+
+.intro-img img{
+    max-width: 100%; /*Tamnho 100% do pai dela*/
+    height: auto;
+}
+
+.lander-content{
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; /*Falo pra coluna n quebrar caso diminua*/
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.grid-one-content {
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    min-height: 100vh;
+
+}
+.grid-main-headding {
+    margin-bottom: 1rem;
+    overflow: hidden ;
+}
+
+.grid-description {
+    /*padding-bottom: 3rem;*/
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*criar trés colunos um 1 fr*/
+    gap: var(--gap);
+    counter-reset: grid-counter;
+    
+   
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.grid h3::before { /**Pseudo elemento com contador css*/
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 7rem;
+    font-style: italic;
+    top: -3rem;
+    left: -1rem;
+    transform: rotate(5deg);
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 34rem;
+    max-height: 33rem;
+    overflow: hidden ; /*Esconder a img pra ela não ultrapasar o tamanho da div- main content*/
+}
+
+.gallery-img img { /*transição*/
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover { /*Pseudo elemento*/
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg); /*Movimento diagonal -x -y*/
+}
+
+.contact-form {
+    grid-column: span 2; /*Ocupar duas colunas*/
+
+}
+
+.contact-form .form-grid {
+    border: none; /*Remover borda fiedlset*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+.form-group{
+    flex: 1 1 320px; /*Espaçamento dos forms*/
+}
+
+.form-group label{
+    display: block; /*Lables quebrar linha e os input ficar em baixo*/
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background: var(--light-gray-color) ;
+    padding: 1.5rem 2.0rem;
+    width: 100%; /*Ocupar 100 da div form group*/
+    font-size: 1.5rem;
+    
+}
+
+.form-group button {
+    border: 0.5rem solid;
+    background: #0810298c ;
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    background: var(--primary-color) ;
+    color: var(--white);
+}
+
+.form-group ::placeholder{ /*Pgando pseudo elemento*/
+    color: #babbc4;
+}
+
+.close-menu{
+    display: none;
+}
+
+@media (max-width: 800px){
+    .intro-content{
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%  ;
+        max-height: 100%;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+    
+    .menu-content,.menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .close-menu-label::after{ /*Pseudoelemento*/
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 1rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white);
+        font-size: 4rem;
+        line-height: 4rem;
+        width: 3rem;
+        height: 4rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu{ /*Macete do menu quando o checkbox for ativada chama  o  menu*/
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after{ /*Quando fechar o menu*/
+        content: '×' ;
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 1rem;
+        right: 2rem;
+        background-color: var(--white);
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--primary-color);
+        transform: rotate(-90deg);
+        border: 0.1rem solid var(--primary-color);
+    }
+}

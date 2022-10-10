@@ -1,0 +1,57 @@
+.menu {
+    position: fixed; /*Menu rola com a pagina*/
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1 ; /*Menu ficar sobre os outros elementos*/
+    border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
+.menu-content{ /*sperar o logo do menu*/
+    display: flex; /*Spera todos os filhos NAV E H1*/
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0 ;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+.menu h1 a {
+    color:inherit /*Herda do pai*/
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.menu ul li a {
+    display: block; /*a por padrão é inline*/
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+ 
+
+.menu div ul li a::after { /*adicionando um pseudo elemento bordinha*/
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 25%;
+    width: 0;
+    height: 0.2rem;
+    background: #FFD700 ;
+    transition: all 300ms ease-in-out;
+
+}
+
+.menu ul li a:hover::after { /*Efeito apos passar o mouse*/
+    width: 50%;
+}

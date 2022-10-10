@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/elements.css">
+    <link rel="stylesheet" href="./assets/css/class.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body >
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">     <!--Selétores, role botão descreve um botão fechar ou abrir o buttom-->
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false">
+                <a href="#intro">Logo</a>
+            </h1>
+            <!--logo-->
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false">  <!--Javascriptbute-->
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#lander">Lander 3</a></li>
+                    <li><a href="#grid-one">Grid</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#princing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!--MENU-->
+        </div>
+    </aside>
+
+
+    <section id="intro" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text">
+                <h2>Willkommen auf meiner Landing page</h2>
+                <p>Heute ist der erste Schultag. Lena steht mit ihrer
+                    Schultüte vor der Schule. Sandra, Susanne und Paul
+                    sind auch da. Die Kinder kennen sich aus dem Kindergarten.
+                    Jetzt gehen sie in die gleiche Klasse.
+                    Sie freuen sich schon auf den Unterricht.
+                    Lena freut sich besonders auf das Rechnen.
+                    Sandra und Susanne aufs Schreiben. Und Paul?
+                    Paul sagt, er freut sich besonders auf die Pausen.</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/img-capa.svg" alt="Imagem das linguagens">
+            </div>
+        </div>
+    </section>
+
+    <section id="lander" class="white-bg section">
+
+        <div class="main-content lander-content">
+            <h2>Länder und Nationalitäten</h2>
+            <p>Jeden Donnerstag treffen sich die Schüler in der Wohnung von Bärbel Kästner in Berlin. Bärbel ist
+                Deutschlehrerin und unterrichtet heute eine Gruppe von sechs Personen.
+            </p>
+            <p>Jack kommt aus den Vereinigten Staaten von Amerika und studiert in San Diego. Er macht gerade ein
+                Auslandssemester in Berlin.</p>
+            <p>
+                Neben ihm sitzt Pawel aus Polen. Er besitzt eine Autowerkstatt in der Nähe der polnischen Stadt Stettin.
+                An Donnerstagen fährt er mit dem Zug nach Berlin, um am Kurs teilzunehmen. Er hat seinen besten Freund,
+                den Briten William, in Deutschland kennengelernt.
+            </p>
+            <p>
+                Der Italiener Luigi hat Italien vor einigen Jahren verlassen. Er ist Koch und arbeitet in einem
+                italienischen Restaurant in Berlin-Mitte. Luigi möchte seine Deutschkenntnisse verbessern.
+                Glücklicherweise kann er sich mit Carla gut unterhalten. Sie ist Schweizerin und Italienisch ist ihre
+                Muttersprache. Deutsch ist, wie auch Italienisch, eine der Amtssprachen in der Schweiz. Deswegen will
+                Carla ein gutes Sprachniveau erreichen.
+            </p>
+        </div>
+    </section>
+
+    <section id="grid-one" class=" main-bg section">
+
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-headding">Deutschsprachigen Länder</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3>TEST1</h3>
+                    <p>
+                        Deutsch wird nicht nur in Deutschland gesprochen. Ganz im Gegenteil, Studien haben ergeben, dass
+                        Deutsch unter den zehn meistgesprochenen Sprachen der Welt ist, zusammen mit Englisch, Mandarin,
+                        Spanisch, Französisch und Russisch. Schätzungen sagen, dass ungefähr 105 Millionen Menschen
+
+                    </p>
+                </article>
+                <article>
+                    <h3>TEST2</h3>
+                    <p>
+                        Ca. 16 Prozent der Bevölkerung der Europäischen Union sprechen Deutsch. Außerhalb von Europa
+                        gibt es
+                        viele andere Länder, in denen man Deutsch spricht, wie zum Beispiel in Kasachstan´, Namibia und
+                        Südafrika. Auch in anderen Teilen der Welt wird Deutsch in geringen Prozentanteilen gesprochen.
+                        Die
+                        deutsche Diaspora (deutsche Gemeinschaften, die in der ersten Hälfte des 20.
+                    </p>
+                </article>
+                <article>
+                    <h3>tEST3</h3>
+                    <p>
+                        Ca. 16 Prozent der Bevölkerung der Europäischen Union sprechen Deutsch. Außerhalb von Europa
+                        gibt es
+                        viele andere Länder, in denen man Deutsch spricht, wie zum Beispiel in Kasachstan´, Namibia und
+                        Südafrika. Auch in anderen Teilen der Welt wird Deutsch in geringen Prozentanteilen gesprochen.
+                        Die
+                        deutsche Diaspora (deutsche Gemeinschaften, die in der ersten Hälfte des 20.
+                    </p>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="gallery" class=" white-bg section">
+
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-headding">Gallery</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=1" alt="Random image from unsplash">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=2" alt="Random image from unsplash">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=3" alt="Random image from unsplash">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=4" alt="Random image from unsplash">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=5" alt="Random image from unsplash">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=6" alt="Random image from unsplash">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="princing" class="main-bg section">
+
+        <div class="main-content lander-content">
+            <h2>Pricing</h2>
+            <p>Jeden Donnerstag treffen sich die Schüler in der Wohnung von Bärbel Kästner in Berlin. Bärbel ist
+                Deutschlehrerin und unterrichtet heute eine Gruppe von sechs Personen.
+            </p>
+            <p>Jack kommt aus den Vereinigten Staaten von Amerika und studiert in San Diego. Er macht gerade ein
+                Auslandssemester in Berlin.</p>
+            <div class="responsive-table">
+                <table>
+                    <caption>Princing table</caption>
+                    <thead>
+                        <tr>
+                            <th>Title1</th>
+                            <th>Title2</th>
+                            <th>Title3</th>
+                            <th>Title4</th>
+                            <th>Title5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <TR>
+                            <td>Content 1</td>
+                            <td>Content 2 </td>
+                            <td>Content 3</td>
+                            <td>Contente 4</td>
+                            <td>content 5</td>
+                        </TR>
+                        <TR>
+                            <td>Content 1</td>
+                            <td>Content 2 </td>
+                            <td>Content 3</td>
+                            <td>Contente 4</td>
+                            <td>content 5</td>
+                        </TR>
+                        <TR>
+                            <td>Content 1</td>
+                            <td>Content 2 </td>
+                            <td>Content 3</td>
+                            <td>Contente 4</td>
+                            <td>content 5</td>
+                        </TR>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="intro white-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text">
+                <h2>Willkommen auf meiner Landing page</h2>
+                <p>Heute ist der erste Schultag. Lena steht mit ihrer
+                    Schultüte vor der Schule. Sandra, Susanne und Paul
+                    sind auch da. Die Kinder kennen sich aus dem Kindergarten.
+                    Jetzt gehen sie in die gleiche Klasse.
+                    Sie freuen sich schon auf den Unterricht.
+                    Lena freut sich besonders auf das Rechnen.
+                    Sandra und Susanne aufs Schreiben. Und Paul?
+                    Paul sagt, er freut sich besonders auf die Pausen.</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/contact.svg" alt="Imagem das linguagens">
+
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Ihren namen">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Ihren nachname ">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Ihren Email">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Ihre Nachricht "></textarea>
+                    </div>
+                    <div class="form-group ">
+
+                        <button type="submit">Send message </button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+    </section>
+
+<a class="back-to-top" href="#intro">➜</a>
+
+</body>
+
+</html>

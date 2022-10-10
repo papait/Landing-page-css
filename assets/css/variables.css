@@ -1,0 +1,13 @@
+/*variavel*/
+:root{
+    --primary-color: #0A1128;
+    --white: #fff;
+    --light-gray-color : #eee;
+    --gap: 3rem;
+}
+
+*{ /*Zerar o CSS*/
+    margin: 0;
+    padding: 0;
+}
+
